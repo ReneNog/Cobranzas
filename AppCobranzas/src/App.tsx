@@ -1,5 +1,5 @@
-import { BrowserRouter, Routes } from "react-router-dom"
-
+import { Route, Routes } from "react-router-dom"
+import CobranzasList from "./componentes/cobranzas/CobranzasList"
 
 
 
@@ -7,12 +7,14 @@ function App() {
  
 
   return (
-    <BrowserRouter>
+    <div>
+ 
     <Routes>
-    <h1>Hola</h1>
+    <Route path="/" element={<CobranzasList/>}/>
     </Routes>
-    </BrowserRouter>
-  )
+   
+    </div> 
+    )
 }
 
 export default App
